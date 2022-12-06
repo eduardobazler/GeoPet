@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet/GeoPet.csproj",
+      "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
       "projectName": "GeoPet",
-      "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet/GeoPet.csproj",
+      "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
       "packagesPath": "/home/eduardo/.nuget/packages/",
-      "outputPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet/obj/",
+      "outputPath": "/home/eduardo/projetoTrybe/GeoPet/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/eduardo/.nuget/NuGet/NuGet.Config"
