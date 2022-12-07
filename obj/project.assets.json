@@ -229,11 +229,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD:GeoPet/obj/project.assets.json
       "projectUniqueName": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
       "projectName": "GeoPet",
       "projectPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
       "packagesPath": "/Users/adrianosantos/.nuget/packages/",
       "outputPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/obj/",
+=======
+      "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
+      "projectName": "GeoPet",
+      "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
+      "packagesPath": "/home/eduardo/.nuget/packages/",
+      "outputPath": "/home/eduardo/projetoTrybe/GeoPet/obj/",
+>>>>>>> 66e9f9f6792017f75cdc868dd1e5df7260e675f3:obj/project.assets.json
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/adrianosantos/.nuget/NuGet/NuGet.Config"

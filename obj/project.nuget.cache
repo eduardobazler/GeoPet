@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD:GeoPet/obj/project.nuget.cache
   "dgSpecHash": "qF6nVylriW6JJ71/dzoa3gjsh0/9A+4f1CduOeKwuFY0SK7WNOGaGd5UWJGjsEvafB2KZ1kCP7z8PN2KxeMnmQ==",
   "success": true,
   "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
+=======
+  "dgSpecHash": "oreFbnbuVjnwVyuXuuGUn7eVuE4LIIfLGHQIhDYUyUz4m8BJ2uR+maevunvJvsE8i7q5Mtmqjujb44tcO1pR6w==",
+  "success": true,
+  "projectFilePath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
+>>>>>>> 66e9f9f6792017f75cdc868dd1e5df7260e675f3:obj/project.nuget.cache
   "expectedPackageFiles": [
     "/Users/adrianosantos/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
