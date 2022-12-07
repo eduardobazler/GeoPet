@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD:GeoPet/obj/project.nuget.cache
-  "dgSpecHash": "qF6nVylriW6JJ71/dzoa3gjsh0/9A+4f1CduOeKwuFY0SK7WNOGaGd5UWJGjsEvafB2KZ1kCP7z8PN2KxeMnmQ==",
+  "dgSpecHash": "DwzoQGfcK+RNOY6b71ySGLngHowv7aMXMj5j1puqJQajMcVd3mgWQUuQNTIVLKuVm/E+JFzUFhPMn6CXlrwcMg==",
   "success": true,
-  "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
-=======
-  "dgSpecHash": "oreFbnbuVjnwVyuXuuGUn7eVuE4LIIfLGHQIhDYUyUz4m8BJ2uR+maevunvJvsE8i7q5Mtmqjujb44tcO1pR6w==",
-  "success": true,
-  "projectFilePath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
->>>>>>> 66e9f9f6792017f75cdc868dd1e5df7260e675f3:obj/project.nuget.cache
+  "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
   "expectedPackageFiles": [
     "/Users/adrianosantos/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
@@ -17,5 +11,12 @@
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

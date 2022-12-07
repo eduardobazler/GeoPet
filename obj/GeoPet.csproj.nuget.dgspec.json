@@ -1,31 +1,17 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD:GeoPet/obj/GeoPet.csproj.nuget.dgspec.json
-    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj": {}
+    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {}
   },
   "projects": {
-    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj": {
+    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
+        "projectUniqueName": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
         "projectName": "GeoPet",
-        "projectPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/GeoPet.csproj",
+        "projectPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
         "packagesPath": "/Users/adrianosantos/.nuget/packages/",
-        "outputPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet/obj/",
-=======
-    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {}
-  },
-  "projects": {
-    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
-        "projectName": "GeoPet",
-        "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
-        "packagesPath": "/home/eduardo/.nuget/packages/",
-        "outputPath": "/home/eduardo/projetoTrybe/GeoPet/obj/",
->>>>>>> 66e9f9f6792017f75cdc868dd1e5df7260e675f3:obj/GeoPet.csproj.nuget.dgspec.json
+        "outputPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/adrianosantos/.nuget/NuGet/NuGet.Config"
