@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace GeoPet.Services
 {
     public class GeoPetService : IGeoPetService
@@ -14,11 +12,14 @@ namespace GeoPet.Services
 
         public async Task<object> FindGeoPet(string latitude, string longitude)
         {
-            var _resp = await _client.GetAsync($"reverse?lat={latitude}&lon={longitude}");
+            var _resp = await _client.GetAsync($"reverse?format=jsonV2&lat={latitude}&lon={longitude}");
             if(!_resp.IsSuccessStatusCode) return default!;
             var _res = await _resp.Content.ReadFromJsonAsync<object>();
             if (_res!.ToString() == "[]") return false;
+            Console.WriteLine(_res);
             return _res;
         }
     }
+
+    // https://nominatim.openstreetmap.org/ui/reverse.html?lat=-23.517506&lon=-47.443750&zoom=18
 }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GeoPet.Models
 {
-    public class GeoPet
+    public class GeoLocalization
     {
         [Key]
         public int Id { get; set; }
