@@ -13,9 +13,10 @@ namespace GeoPet.Services
         public async Task<object> FindGeoPet(string latitude, string longitude)
         {
             var _resp = await _client.GetAsync($"reverse?format=jsonv2&lat={latitude}&lon={longitude}");
-            if(!_resp.IsSuccessStatusCode) return default!;
+            // if(!_resp.IsSuccessStatusCode) return default!;
+            Console.WriteLine(_resp);
             var _res = await _resp.Content.ReadFromJsonAsync<object>();
-            if (_res!.ToString() == "[]") return false;
+            // if (_res!.ToString() == "[]") return false;
             Console.WriteLine(_res);
             return _res;
         }
