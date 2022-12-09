@@ -16,7 +16,7 @@ public class GeoPetContext : DbContext, IGeoPetContext
         if (!optionsBuilder.IsConfigured)
         {
             optionsBuilder.UseSqlServer(
-                @"Server=127.0.0.1;Database=video-portal;User=SA;Password=password12!;TrustServerCertificate=True");
+                @"Server=127.0.0.1;Database=geo-pet;User=SA;Password=password12!;TrustServerCertificate=True");
         }
     }
 }
