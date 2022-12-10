@@ -86,7 +86,7 @@ namespace GeoPet.Controllers
         /// <param name="petId"> a pet id</param>
         /// <returns> a video</returns>
         [HttpPost("user/{userId}/pet/{petId}")]
-        public IActionResult AddVideoTouser(int userId, int petId)
+        public IActionResult AddPetsToUser(int userId, int petId)
         {
             var user = _repository.GetUserById(userId);
             if (user == null)
