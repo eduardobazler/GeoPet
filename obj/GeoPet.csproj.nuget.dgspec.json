@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {}
+    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {}
   },
   "projects": {
-    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {
+    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
+        "projectUniqueName": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
         "projectName": "GeoPet",
-        "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
-        "packagesPath": "/home/eduardo/.nuget/packages/",
-        "outputPath": "/home/eduardo/projetoTrybe/GeoPet/obj/",
+        "projectPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
+        "packagesPath": "/Users/adrianosantos/.nuget/packages/",
+        "outputPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/eduardo/.nuget/NuGet/NuGet.Config"
+          "/Users/adrianosantos/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,9 +38,37 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[5.0.0-alpha.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "XunitXml.TestLogger": {
+              "target": "Package",
+              "version": "[3.0.70, )"
             }
           },
           "imports": [
@@ -62,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
