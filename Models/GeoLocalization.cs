@@ -8,6 +8,7 @@ namespace GeoPet.Models
         [Key]
         public int Id { get; set; }
         public string Localization { get; set; }
+        public int OsmId { get; set; }
         [ForeignKey("PetId")]
         public int PetId { get; set; }
         public DateTime Created { get; set; }
