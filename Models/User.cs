@@ -11,7 +11,7 @@ namespace GeoPet.Models
         public string Cep { get; set; }
         public string Password { get; set; }
         [InverseProperty("User")]
-        public ICollection<Pet> Pets { get; set; }
+        public ICollection<Pet> Pet { get; set; }
         public DateTime Created { get; set; }
     }
 }

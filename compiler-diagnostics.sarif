@@ -14,7 +14,7 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'GeoPet' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'GeoLocalization' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
@@ -36,7 +36,7 @@
                   "startLine": 9,
                   "startColumn": 35,
                   "endLine": 9,
-                  "endColumn": 41
+                  "endColumn": 50
                 }
               }
             }
@@ -48,7 +48,7 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Pets' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'Pet' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
@@ -70,7 +70,7 @@
                   "startLine": 10,
                   "startColumn": 23,
                   "endLine": 10,
-                  "endColumn": 27
+                  "endColumn": 26
                 }
               }
             }
@@ -82,7 +82,7 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
@@ -104,7 +104,109 @@
                   "startLine": 11,
                   "startColumn": 24,
                   "endLine": 11,
-                  "endColumn": 29
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Localization' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 21,
+                  "endLine": 16,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 21,
+                  "endLine": 16,
+                  "endColumn": 25
                 }
               }
             }
@@ -252,7 +354,7 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Pets' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'Pet' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
@@ -261,7 +363,7 @@
                   "startLine": 14,
                   "startColumn": 33,
                   "endLine": 14,
-                  "endColumn": 37
+                  "endColumn": 36
                 }
               }
             }
@@ -274,143 +376,7 @@
                   "startLine": 14,
                   "startColumn": 33,
                   "endLine": 14,
-                  "endColumn": 37
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Size' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 21,
-                  "endLine": 16,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 21,
-                  "endLine": 16,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Localization' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 35
+                  "endColumn": 36
                 }
               }
             }
@@ -428,10 +394,10 @@
               "resultFile": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 16,
                   "startColumn": 20,
-                  "endLine": 14,
-                  "endColumn": 74
+                  "endLine": 16,
+                  "endColumn": 73
                 }
               }
             }
@@ -449,10 +415,10 @@
               "resultFile": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
                 "region": {
-                  "startLine": 22,
+                  "startLine": 24,
                   "startColumn": 20,
-                  "endLine": 22,
-                  "endColumn": 71
+                  "endLine": 24,
+                  "endColumn": 70
                 }
               }
             }

@@ -7,46 +7,44 @@ public class GeoPetContext : DbContext, IGeoPetContext
 {
     public GeoPetContext(DbContextOptions<GeoPetContext> options) : base(options) { }
     public DbSet<GeoLocalization> GeoLocalization { get; set; }
-    public DbSet<Pet> Pets { get; set; }
-    public DbSet<User> Users { get; set; }
+    public DbSet<Pet> Pet { get; set; }
+    public DbSet<User> User { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
         {
 
+            //optionsBuilder
+            //    .EnableSensitiveDataLogging()
+            //    .UseSqlServer(@"
+            //        Server=127.0.0.1;
+            //        Database=GeoPetDb;
+            //        User=root;
+            //        Password=password12!;"
+            //);
+
             optionsBuilder
                 .EnableSensitiveDataLogging()
                 .UseSqlServer(@"
-                    Server=127.0.0.1;
-                    Database=GeoPetDb;
-                    User=root;
-                    Password=password12!;"
-            );
+                    Server=tcp:geopetadmin.database.windows.net,1433;
+                    Initial Catalog=GeoPet;
+                    Persist Security Info=False;
+                    User ID=geopetadmin;
+                    Password=GeoPet_1;
+                    MultipleActiveResultSets=False;
+                    Encrypt=True;
+                    TrustServerCertificate=False;
+                    Connection Timeout=30;");
         }
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<User>()
-            .HasData(
-                new User { UserId = 1, Name = "Adriano", Email = "teste1@teste.com.br", Cep = "18037-300", Password = "123456" },
-                new User { UserId = 2, Name = "Eduardo", Email = "teste2@teste.com.br", Cep = "18037-310", Password = "654321" },
-                new User { UserId = 3, Name = "Astolfo", Email = "teste3@teste.com.br", Cep = "18037-320", Password = "321654" }
-            );
-
         modelBuilder.Entity<Pet>()
             .HasOne(b => b.User)
-            .WithMany(p => p.Pets)
-            .HasForeignKey(b => b.UserId);
-
-        modelBuilder.Entity<Pet>()
-            .HasData(
-                new Pet { PetId = 1, Size = "Large", Age = 4, Breed = BreedEnum.Doberman, Name = "Pequenino", UserId = 3 },
-                new Pet { PetId = 2, Size = "Small", Age = 2, Breed = BreedEnum.Pinscher, Name = "Zangado", UserId = 2 },
-                new Pet { PetId = 3, Size = "Medium", Age = 3, Breed = BreedEnum.Pit_Bull, Name = "Pandora", UserId = 1 }
-            );
-
+            .WithMany(p => p.Pet)
+            .HasForeignKey(b => b.FK_UserId);
     }
 }
 

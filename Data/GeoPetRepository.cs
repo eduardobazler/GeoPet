@@ -13,23 +13,23 @@ namespace GeoPet.Data
 
         public User GetUserById(int userId)
         {
-            return _context.Users.FirstOrDefault(y => y.UserId == userId);
+            return _context.User.FirstOrDefault(y => y.UserId == userId);
         }
         public IEnumerable<User> GetUsers()
         {
-            return _context.Users.ToList();
+            return _context.User.ToList();
         }
         public Pet GetPetById(int PetId)
         {
-            return _context.Pets.FirstOrDefault(y => y.PetId == PetId);
+            return _context.Pet.FirstOrDefault(y => y.PetId == PetId);
         }
         public IEnumerable<Pet> GetPets()
         {
-            return _context.Pets.ToList();
+            return _context.Pet.ToList();
         }
         public IEnumerable<Pet> GetPetsByUserId(int PetId)
         {
-            return _context.Pets.Where(y => y.PetId == PetId);
+            return _context.Pet.Where(y => y.PetId == PetId);
         }
         
         public void DeleteUser(User users)
@@ -38,7 +38,7 @@ namespace GeoPet.Data
 
             if(getUser) throw new InvalidOperationException("Este usuário não pode ser deletado");
 
-            _context.Users.Remove(users);
+            _context.User.Remove(users);
             _context.SaveChanges();
         }
         public void AddPetsToUser(Pet pet, User user)
@@ -50,7 +50,7 @@ namespace GeoPet.Data
             throw new InvalidOperationException("Este pet ou usuário não existe");
            }
 
-            getUser.UserId = getPet.UserId;
+            getUser.UserId = getPet.FK_UserId;
             _context.SaveChanges();
 
         }
