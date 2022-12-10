@@ -9,20 +9,12 @@ namespace GeoPet.Controllers
     public class BaseController : ControllerBase
     {
         public readonly IGeoPetRepository _repository;
-        // public readonly IGeoPetService _service;
+        //public readonly IGeoPetService _service;
+
         public BaseController(IGeoPetRepository repository)
         {
             _repository = repository;
         }
-
-        // [HttpGet]
-        // [Route("localization")]
-        // public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
-        // {
-        //     var result = await _service.FindGeoPet(latitude, longitude);
-        //     if (result is false) return NotFound();
-        //     return Ok(result);
-        // }
 
         /// <summary> This function return a user</summary>
         /// <param name="id"> a user id</param>
@@ -109,5 +101,23 @@ namespace GeoPet.Controllers
             _repository.AddPetsToUser(pet, user);
             return Ok(pet);
         }
+
+        /// <summary> This function add a pet to a user</summary>
+        /// <param name="userId"> a user id</param>
+        /// <param name="petId"> a pet id</param>
+        /// <returns> a video</returns>
+        //[HttpPost]
+        //[Route("pet/{id}/localization")]
+        //public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
+        //{
+        //    var result = await _service.FindGeoPet(latitude, longitude);
+        //    if (result is false) return NotFound();
+        //    return Ok(result);
+        //}
+
+        //Task<object> IGeoPetService.FindGeoPet(string latitude, string longitude)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
