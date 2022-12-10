@@ -1,4 +1,5 @@
 using GeoPet.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace GeoPet.Data
 {
@@ -9,6 +10,7 @@ namespace GeoPet.Data
         {
             _context = context;
         }
+
         public User GetUserById(int userId)
         {
             return _context.Users.FirstOrDefault(y => y.UserId == userId);
@@ -52,6 +54,17 @@ namespace GeoPet.Data
             _context.SaveChanges();
 
         }
-        
+
+        public void AddGeoLocalPets(int PetId, string lan, string lon)
+        {
+            //var getPet = GetPetById(PetId);
+            //if (getPet is null) throw new InvalidOperationException("Este pet não existe");
+
+            //_context.GeoLocalization.Add(getPet);
+            //_context.SaveChanges();
+
+            throw new NotImplementedException();
+
+        }
     }
 }

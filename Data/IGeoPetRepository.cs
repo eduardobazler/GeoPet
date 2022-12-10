@@ -11,5 +11,6 @@ namespace GeoPet.Data
         IEnumerable<Pet> GetPetsByUserId(int userId);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
+        void AddGeoLocalPets(int PetId, string lat, string lon);
     }
 }
