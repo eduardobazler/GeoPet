@@ -6,7 +6,7 @@ namespace GeoPet.Data;
 public class GeoPetContext : DbContext, IGeoPetContext
 {
     public GeoPetContext(DbContextOptions<GeoPetContext> options) : base(options) { }
-    public DbSet<GeoLocalization> GeoPet { get; set; }
+    public DbSet<GeoLocalization> GeoLocalization { get; set; }
     public DbSet<Pet> Pets { get; set; }
     public DbSet<User> Users { get; set; }
 
@@ -14,15 +14,15 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            //IConfiguration configuration = new ConfigurationBuilder()
-            //    .SetBasePath(Directory.GetCurrentDirectory())
-            //    .AddJsonFile("appsettings.json", false, true)
-            //    .Build();
 
-            //optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
-            optionsBuilder.UseSqlServer(
-                @"Server=127.0.0.8;Database=GeoPetDb;User=root;Password=password12!;Trusted_Connection=True;MultipleActiveResultSets=True"
-               );
+            optionsBuilder
+                .EnableSensitiveDataLogging()
+                .UseSqlServer(@"
+                    Server=127.0.0.1;
+                    Database=GeoPetDb;
+                    User=root;
+                    Password=password12!;"
+            );
         }
     }
 
@@ -36,11 +36,17 @@ public class GeoPetContext : DbContext, IGeoPetContext
             );
 
         modelBuilder.Entity<Pet>()
+            .HasOne(b => b.User)
+            .WithMany(p => p.Pets)
+            .HasForeignKey(b => b.UserId);
+
+        modelBuilder.Entity<Pet>()
             .HasData(
                 new Pet { PetId = 1, Size = "Large", Age = 4, Breed = BreedEnum.Doberman, Name = "Pequenino", UserId = 3 },
                 new Pet { PetId = 2, Size = "Small", Age = 2, Breed = BreedEnum.Pinscher, Name = "Zangado", UserId = 2 },
                 new Pet { PetId = 3, Size = "Medium", Age = 3, Breed = BreedEnum.Pit_Bull, Name = "Pandora", UserId = 1 }
             );
+
     }
 }
 
