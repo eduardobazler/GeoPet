@@ -1,0 +1,4 @@
+﻿<Properties StartupConfiguration="{6C0BFC3B-DD4D-41A7-BAD0-1036EE0C9E70}|GeoPet" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

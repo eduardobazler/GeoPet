@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j6RtIwhR9VFO9O4t0Tx1CuaHVGX3jCgMv7AWE6a0GkMD2zePYbHEP6Ra6t/Ze+Fth+Tp/JE7sSKBqa6FjX8CdQ==",
+  "dgSpecHash": "ZY7ObwYI6DyEQ1v2VTVMiQ2O0WzNyT/L+ZQnHeTnmSD/X2R11NlP4noOcNSjlqBFhzvcjTVkI2l92fO0Jawuig==",
   "success": true,
   "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,10 @@
     "/Users/adrianosantos/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/mysqlconnector/1.0.1/mysqlconnector.1.0.1.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/pomelo.entityframeworkcore.mysql/5.0.0-alpha.1/pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
