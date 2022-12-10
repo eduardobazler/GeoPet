@@ -6,7 +6,6 @@ namespace GeoPet.Data;
 public class GeoPetContext : DbContext, IGeoPetContext
 {
     public GeoPetContext(DbContextOptions<GeoPetContext> options) : base(options) { }
-    public GeoPetContext() { }
     public DbSet<GeoLocalization> GeoPet { get; set; }
     public DbSet<Pet> Pets { get; set; }
     public DbSet<User> Users { get; set; }
