@@ -6,45 +6,23 @@ namespace GeoPet.Controllers
 {
     [ApiController]
     [Route("api")]
-    public class BaseController : ControllerBase, IGeoPetController
+    public class BaseController : ControllerBase
     {
         public readonly IGeoPetRepository _repository;
-        public readonly IGeoPetService _service;
+        // public readonly IGeoPetService _service;
         public BaseController(IGeoPetRepository repository)
         {
             _repository = repository;
         }
 
-        [HttpGet]
-        [Route("localization")]
-        public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
-        {
-            var result = await _service.FindGeoPet(latitude, longitude);
-            if (result is false) return NotFound();
-            return Ok(result);
-        }
-
-         /// <summary> This function list a pet</summary>
-        /// <param name="id"> a pet id</param>
-        /// <returns> a pet list</returns>
-        [HttpGet("pet/{id}")]
-        public IActionResult GetPet(int id)
-        {
-            var pet = _repository.GetPetById(id);
-            if (pet == null)
-            {
-                return NotFound();
-            }
-            return Ok(pet);
-        }
-
-        /// <summary> This function return a list of pets</summary>
-        /// <returns> a pet list</returns>
-        [HttpGet("pet")]
-        public IActionResult GetPets()
-        {
-            return Ok(_repository.GetPets());
-        }
+        // [HttpGet]
+        // [Route("localization")]
+        // public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
+        // {
+        //     var result = await _service.FindGeoPet(latitude, longitude);
+        //     if (result is false) return NotFound();
+        //     return Ok(result);
+        // }
 
         /// <summary> This function return a user</summary>
         /// <param name="id"> a user id</param>
@@ -55,8 +33,8 @@ namespace GeoPet.Controllers
             return Ok(_repository.GetUserById(id));
         }
 
-        /// <summary> This function return a list of channels</summary>
-        /// <returns> a channel list</returns>
+        /// <summary> This function return a list of users</summary>
+        /// <returns> a user list</returns>
         [HttpGet("user")]
         public IActionResult GetUsers()
         {
@@ -86,6 +64,30 @@ namespace GeoPet.Controllers
             _repository.DeleteUser(user);
             return Ok(user);
         }
+
+         /// <summary> This function list a pet</summary>
+        /// <param name="id"> a pet id</param>
+        /// <returns> a pet list</returns>
+        [HttpGet("pet/{id}")]
+        public IActionResult GetPetById(int id)
+        {
+            var pet = _repository.GetPetById(id);
+            if (pet == null)
+            {
+                return NotFound();
+            }
+            return Ok(pet);
+        }
+
+        /// <summary> This function return a list of pets</summary>
+        /// <returns> a pet list</returns>
+        [HttpGet("pet")]
+        public IActionResult GetPets()
+        {
+            return Ok(_repository.GetPets());
+        }
+
+        
 
         /// <summary> This function add a pet to a user</summary>
         /// <param name="userId"> a user id</param>
