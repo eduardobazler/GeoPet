@@ -9,7 +9,7 @@ namespace GeoPet.Controllers
     public class BaseController : ControllerBase
     {
         public readonly IGeoPetRepository _repository;
-        //public readonly IGeoPetService _service;
+        // public readonly IGeoPetService _service;
 
         public BaseController(IGeoPetRepository repository)
         {
@@ -102,22 +102,23 @@ namespace GeoPet.Controllers
             return Ok(pet);
         }
 
-        /// <summary> This function add a pet to a user</summary>
-        /// <param name="userId"> a user id</param>
-        /// <param name="petId"> a pet id</param>
-        /// <returns> a video</returns>
-        //[HttpPost]
-        //[Route("pet/{id}/localization")]
-        //public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
-        //{
-        //    var result = await _service.FindGeoPet(latitude, longitude);
-        //    if (result is false) return NotFound();
-        //    return Ok(result);
-        //}
+        /// <summary> This function add a localization to a pet</summary>
+        /// <param name="PetId"> a pet id</param>
+        /// <param name="latitude"> a latitude</param>
+        /// <param name="longitude"> a longitude</param>
+        /// <returns> a localization</returns>
+        [HttpPost("pet/{id}/localization")]
+        public IActionResult AddGeoLocalPets(int PetId, string latitude, string longitude)
+        {
 
-        //Task<object> IGeoPetService.FindGeoPet(string latitude, string longitude)
-        //{
-        //    throw new NotImplementedException();
-        //}
+            //var result = await _service.AddGeoLocalPets(PetId, latitude, longitude);
+
+            //if (result is false) return NotFound();
+            //return Ok(result);
+
+            throw new NotImplementedException();
+        }
+
+
     }
 }

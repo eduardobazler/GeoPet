@@ -55,10 +55,11 @@ namespace GeoPet.Data
 
         }
 
-        public void AddGeoLocalPets(int PetId, string lan, string lon)
+        public void AddGeoLocalPets(int PetId, string latitude, string longitude)
         {
             //var getPet = GetPetById(PetId);
             //if (getPet is null) throw new InvalidOperationException("Este pet não existe");
+            // var result = await _service.FindGeoPet(lat, lon);
 
             //_context.GeoLocalization.Add(getPet);
             //_context.SaveChanges();
