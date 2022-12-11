@@ -1,29 +1,20 @@
 ﻿<Properties StartupConfiguration="{6C0BFC3B-DD4D-41A7-BAD0-1036EE0C9E70}|GeoPet" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Data/GeoPetContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BaseController.cs">
     <Files>
-      <File FileName="Program.cs" />
-      <File FileName="Data/GeoPetContext.cs" Line="23" Column="27" />
-      <File FileName="Models/User.cs" />
-      <File FileName="Models/Pet.cs" />
-      <File FileName="Models/GeoLocalization.cs" />
+      <File FileName="Controllers/BaseController.cs" Line="121" Column="1" />
+      <File FileName="Data/IGeoPetRepository.cs" Line="16" Column="2" />
+      <File FileName="Data/GeoPetRepository.cs" Line="58" Column="82" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GeoPet" expanded="True">
             <Node name="GeoPet" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="BaseController.cs" selected="True" />
               </Node>
-              <Node name="Data" expanded="True">
-                <Node name="GeoPetContext.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Enums" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
@@ -34,5 +25,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
