@@ -1,4 +1,5 @@
 using GeoPet.Models;
+using GeoPet.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace GeoPet.Data
@@ -6,9 +7,12 @@ namespace GeoPet.Data
     public class GeoPetRepositorys : IGeoPetRepository
     {
         private readonly IGeoPetContext _context;
-        public GeoPetRepositorys(IGeoPetContext context)
+        private readonly IGeoPetService _service;
+
+        public GeoPetRepositorys(IGeoPetContext context, IGeoPetService service)
         {
             _context = context;
+            _service = service;
         }
 
         public User GetUserById(int userId)
@@ -55,17 +59,30 @@ namespace GeoPet.Data
 
         }
 
-        public void AddGeoLocalPets(int PetId, string latitude, string longitude)
+        public async Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string latitude, string longitude)
         {
-            //var getPet = GetPetById(PetId);
-            //if (getPet is null) throw new InvalidOperationException("Este pet não existe");
-            // var result = await _service.FindGeoPet(lat, lon);
 
-            //_context.GeoLocalization.Add(getPet);
-            //_context.SaveChanges();
+            var getPet = GetPetById(PetId);
 
-            throw new NotImplementedException();
+            if (getPet is null) throw new InvalidOperationException("Este pet não encontrado");
 
+            var result = await _service.FindGeoPet(latitude, longitude);
+
+            if (result is null) throw new InvalidOperationException("Este pet não possui registros");
+
+            var geoPet = new GeoLocalization()
+            {
+                Id = new Guid(),
+                Localization = "teste",
+                OsmId = 108065,
+                PetId = PetId
+            };
+
+            _context.GeoLocalization.AddRange(geoPet);
+
+            return geoPet;
+
+            // throw new NotImplementedException();
         }
     }
 }

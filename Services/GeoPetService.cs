@@ -13,6 +13,7 @@ namespace GeoPet.Services
             _client.BaseAddress = new Uri(_url);
         }
 
+
         public async Task<object> FindGeoPet(string latitude, string longitude)
         {
             _client.DefaultRequestHeaders.Add("User-Agent", "WHATEVER VALUE");

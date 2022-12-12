@@ -6,8 +6,8 @@ namespace GeoPet.Models
     public class GeoLocalization
     {
         [Key]
-        public int Id { get; set; }
-        public string Localization { get; set; }
+        public Guid Id { get; set; }
+        public string Localization { get; set; } = null;
         public int OsmId { get; set; }
         [ForeignKey("FK_PetId")]
         public int PetId { get; set; }

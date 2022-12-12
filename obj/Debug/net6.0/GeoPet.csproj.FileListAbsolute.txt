@@ -98,3 +98,4 @@
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Debug/net6.0/GeoPet.pdb
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Debug/net6.0/GeoPet.genruntimeconfig.cache
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Debug/net6.0/ref/GeoPet.dll
+/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Debug/net6.0/QRCoder.dll

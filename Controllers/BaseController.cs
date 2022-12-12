@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
 using GeoPet.Data;
+using static System.Net.WebRequestMethods;
 
 namespace GeoPet.Controllers
 {
@@ -103,22 +104,21 @@ namespace GeoPet.Controllers
         }
 
         /// <summary> This function add a localization to a pet</summary>
-        /// <param name="PetId"> a pet id</param>
+        /// <param name="petId"> a pet id</param>
         /// <param name="latitude"> a latitude</param>
         /// <param name="longitude"> a longitude</param>
         /// <returns> a localization</returns>
-        [HttpPost("pet/{id}/localization")]
-        public IActionResult AddGeoLocalPets(int PetId, string latitude, string longitude)
+        [HttpPost("pet/{petId}/localization")]
+        public IActionResult AddGeoLocalPets(int petId, string latitude, string longitude)
         {
 
-            //var result = await _service.AddGeoLocalPets(PetId, latitude, longitude);
+            var geoPet = _repository.AddGeoLocalPetsAsync(petId, latitude, longitude);
 
-            //if (result is false) return NotFound();
-            //return Ok(result);
+            if (geoPet == null) return NotFound();
 
-            throw new NotImplementedException();
+            return Ok(geoPet);
+
+            //throw new NotImplementedException();
         }
-
-
     }
 }

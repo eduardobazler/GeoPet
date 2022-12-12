@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZY7ObwYI6DyEQ1v2VTVMiQ2O0WzNyT/L+ZQnHeTnmSD/X2R11NlP4noOcNSjlqBFhzvcjTVkI2l92fO0Jawuig==",
+  "dgSpecHash": "sS6gKitnKTzNncQoxCt/g/msNIEknldG49JzZWitOBlNMZzV0guFjFxiIze5cIsGyDbP5JZqGnHuPqTYB+psTQ==",
   "success": true,
   "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,7 @@
     "/Users/adrianosantos/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/pomelo.entityframeworkcore.mysql/5.0.0-alpha.1/pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/qrcoder/1.4.3/qrcoder.1.4.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
