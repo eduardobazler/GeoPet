@@ -28,6 +28,7 @@
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Newtonsoft.Json.dll
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Pomelo.JsonObject.dll
+/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/QRCoder.dll
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -71,4 +72,3 @@
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.pdb
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.genruntimeconfig.cache
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/ref/GeoPet.dll
-/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/bin/Release/net6.0/QRCoder.dll

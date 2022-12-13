@@ -1,7 +1,9 @@
+using GeoPet.Data;
+
 namespace GeoPet.Services
 {
     public interface IGeoPetService
     {
-        Task<object> FindGeoPet(string latitude, string longitude);
+        Task<Localization> FindGeoPet(string latitude, string longitude);
     }
 }

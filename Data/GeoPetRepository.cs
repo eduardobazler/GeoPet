@@ -59,7 +59,7 @@ namespace GeoPet.Data
 
         }
 
-        public async Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string latitude, string longitude)
+        public async Task<Object> AddGeoLocalPetsAsync(int PetId, string latitude, string longitude)
         {
 
             var getPet = GetPetById(PetId);
@@ -72,13 +72,14 @@ namespace GeoPet.Data
 
             var geoPet = new GeoLocalization()
             {
-                Id = new Guid(),
-                Localization = "teste",
-                OsmId = 108065,
-                PetId = PetId
+                Localization = result.displayName,
+                OsmId = result.osmId,
+                FK_PetId = PetId,
+                Created = DateTime.Now,
             };
 
-            _context.GeoLocalization.AddRange(geoPet);
+            _context.GeoLocalization.Add(geoPet);
+            _context.SaveChanges();
 
             return geoPet;
 

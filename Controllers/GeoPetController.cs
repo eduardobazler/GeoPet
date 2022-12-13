@@ -21,7 +21,7 @@ namespace GeoPet.Controllers
         public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
         {
             var result = await _service.FindGeoPet(latitude, longitude);
-            if (result is false) return NotFound();
+            if (result == null) return NotFound();
             return Ok(result);
         }
     }

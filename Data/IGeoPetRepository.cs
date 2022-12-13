@@ -1,4 +1,5 @@
 using GeoPet.Models;
+using GeoPet.Services;
 
 namespace GeoPet.Data
 {
@@ -11,6 +12,6 @@ namespace GeoPet.Data
         IEnumerable<Pet> GetPetsByUserId(int userId);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
-        Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
+        Task<Object> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
     }
 }
