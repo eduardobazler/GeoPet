@@ -12,6 +12,6 @@ namespace GeoPet.Data
         IEnumerable<Pet> GetPetsByUserId(int userId);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
-        Task<Object> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
+        Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
     }
 }

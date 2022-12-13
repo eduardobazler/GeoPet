@@ -109,10 +109,10 @@ namespace GeoPet.Controllers
         /// <param name="longitude"> a longitude</param>
         /// <returns> a localization</returns>
         [HttpPost("pet/{petId}/localization")]
-        public IActionResult AddGeoLocalPets(int petId, string latitude, string longitude)
+        public async Task<IActionResult> AddGeoLocalPetsAsync(int petId, string latitude, string longitude)
         {
 
-            var geoPet = _repository.AddGeoLocalPetsAsync(petId, latitude, longitude);
+            var geoPet = await _repository.AddGeoLocalPetsAsync(petId, latitude, longitude);
 
             if (geoPet == null) return NotFound();
 
