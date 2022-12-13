@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+using GeoPet.Controllers.TypesReq;
 using GeoPet.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +21,15 @@ namespace GeoPet.Data
         {
             return _context.User.ToList();
         }
+
+        public async Task<User> CreateUser(User user)
+        {
+            var createdUser = await _context.User.AddAsync(user, new CancellationToken(true));
+            Console.WriteLine(createdUser);
+            _context.SaveChanges();
+            return createdUser.Entity;
+        }
+
         public Pet GetPetById(int PetId)
         {
             return _context.Pet.FirstOrDefault(y => y.PetId == PetId);
@@ -41,6 +52,8 @@ namespace GeoPet.Data
             _context.User.Remove(users);
             _context.SaveChanges();
         }
+        
+        
         public void AddPetsToUser(Pet pet, User user)
         {
            var getPet = GetPetById(pet.PetId);

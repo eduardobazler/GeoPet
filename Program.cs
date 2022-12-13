@@ -1,5 +1,6 @@
 using GeoPet.Services;
 using GeoPet.Data;
+using GeoPet.Services.UserService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddHttpClient<IGeoPetService, GeoPetService>();
 builder.Services.AddDbContext<GeoPetContext>();
 builder.Services.AddScoped<IGeoPetContext, GeoPetContext>();
 builder.Services.AddScoped<IGeoPetRepository, GeoPetRepositorys>();
+builder.Services.AddScoped<IUserService, UserService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

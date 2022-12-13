@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {}
+    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {}
   },
   "projects": {
-    "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj": {
+    "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
+        "projectUniqueName": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
         "projectName": "GeoPet",
-        "projectPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
-        "packagesPath": "/Users/adrianosantos/.nuget/packages/",
-        "outputPath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/",
+        "projectPath": "/home/eduardo/projetoTrybe/GeoPet/GeoPet.csproj",
+        "packagesPath": "/home/eduardo/.nuget/packages/",
+        "outputPath": "/home/eduardo/projetoTrybe/GeoPet/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/adrianosantos/.nuget/NuGet/NuGet.Config"
+          "/home/eduardo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,3 +1,4 @@
+using GeoPet.Controllers.TypesReq;
 using GeoPet.Models;
 
 namespace GeoPet.Data
@@ -6,6 +7,7 @@ namespace GeoPet.Data
     {
         User GetUserById(int userId);
         IEnumerable<User> GetUsers();
+        Task<User> CreateUser(User user);
         Pet GetPetById(int PetId);
         IEnumerable<Pet> GetPets();
         IEnumerable<Pet> GetPetsByUserId(int userId);

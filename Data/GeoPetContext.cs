@@ -14,18 +14,7 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-
-            //optionsBuilder
-            //    .EnableSensitiveDataLogging()
-            //    .UseSqlServer(@"
-            //        Server=127.0.0.1;
-            //        Database=GeoPetDb;
-            //        User=root;
-            //        Password=password12!;"
-            //);
-
             optionsBuilder
-                .EnableSensitiveDataLogging()
                 .UseSqlServer(@"
                     Server=tcp:geopetadmin.database.windows.net,1433;
                     Initial Catalog=GeoPet;

@@ -28,6 +28,20 @@
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Controllers\UserParam\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\UserParam\**" />
+    <Compile Remove="Services\Localization.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Controllers\UserParam\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Controllers\UserParam\**" />
   </ItemGroup>
 </Project>
 
