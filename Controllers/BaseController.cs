@@ -80,7 +80,6 @@ namespace GeoPet.Controllers
             return Ok(_repository.GetPets());
         }
 
-        
 
         /// <summary> This function add a pet to a user</summary>
         /// <param name="userId"> a user id</param>
@@ -118,7 +117,6 @@ namespace GeoPet.Controllers
 
             return Ok(geoPet);
 
-            //throw new NotImplementedException();
         }
     }
 }

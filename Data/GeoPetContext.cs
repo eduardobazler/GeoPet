@@ -14,16 +14,6 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-
-            //optionsBuilder
-            //    .EnableSensitiveDataLogging()
-            //    .UseSqlServer(@"
-            //        Server=127.0.0.1;
-            //        Database=GeoPetDb;
-            //        User=root;
-            //        Password=password12!;"
-            //);
-
             optionsBuilder
                 .EnableSensitiveDataLogging()
                 .UseSqlServer(@"
@@ -47,7 +37,3 @@ public class GeoPetContext : DbContext, IGeoPetContext
             .HasForeignKey(b => b.FK_UserId);
     }
 }
-
-// @"Server=127.0.0.1;Database=geopetdb;User=root;Password=password12!;TrustServerCertificate=True"
-// "Server=(localdb)\\msqllocaldb;Database=GeoPetDb;Trusted_Connection=True;MultipleActiveResultSets=True"
-// "Server=(localdb)\\msqllocaldb;Database=GeoPetDb;User=root;Password=password12!;Trusted_Connection=True;MultipleActiveResultSets=True

@@ -82,8 +82,6 @@ namespace GeoPet.Data
             _context.SaveChanges();
 
             return updatedLocation.Entity;
-
-            // throw new NotImplementedException();
         }
     }
 }

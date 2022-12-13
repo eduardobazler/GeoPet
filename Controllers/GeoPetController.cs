@@ -9,11 +9,10 @@ namespace GeoPet.Controllers
     public class GeoPetController : ControllerBase
     {
         public readonly IGeoPetService _service;
-       // public readonly IGeoPetRepository _repository;
+       
         public GeoPetController(IGeoPetService service)
         {
             _service = service;
-           // _repository = repository;
         }
 
         [HttpGet]

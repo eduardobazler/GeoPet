@@ -32,7 +32,4 @@ namespace GeoPet.Services
             return _res;
         }
     }
-
-    // https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=-23.517506&lon=-47.443750
-    // https://nominatim.openstreetmap.org/ui/reverse.html?lat=-23.517506&lon=-47.443750&zoom=18
 }
