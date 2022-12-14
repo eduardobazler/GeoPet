@@ -1,11 +1,8 @@
-﻿using System;
-namespace GeoPet.Enums
+﻿public enum SizeEnum
 {
-	public enum SizeEnum
-	{
 		Large,
 		Medium,
 		Small
-	}
 }
+
 

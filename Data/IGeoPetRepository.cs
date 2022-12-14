@@ -1,3 +1,4 @@
+using GeoPet.Controllers.TypesReq;
 using GeoPet.Models;
 using System.Drawing;
 using GeoPet.Services;
@@ -9,13 +10,16 @@ namespace GeoPet.Data
     {
         User GetUserById(int userId);
         IEnumerable<User> GetUsers();
-        Pet GetPetById(int PetId);
-        IEnumerable<Pet> GetPets();
-        IEnumerable<Pet> GetPetsByUserId(int userId);
+        Task<User> CreateUser(User user);
+        Pet GetPetById(int petId, int userId);
+        IEnumerable<Pet> GetPets(int userId);
+        Task<Pet> CreatePet(Pet pet);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
-        Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
+        Task<GeoLocalization> AddGeoLocalPetsAsync(int userId, int PetId, string lat, string lon);
         Qrcode GenerateQrCode(int PetId);
         byte[] GenerateQrCodeImage(int PetId);
+        void DeletePet(Pet pet);
+        User FindUser(AuthUser user);
     }
 }

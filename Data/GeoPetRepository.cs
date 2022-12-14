@@ -6,6 +6,8 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Drawing.Imaging;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using GeoPet.Controllers.TypesReq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -32,48 +34,81 @@ namespace GeoPet.Data
         }
         public IEnumerable<User> GetUsers()
         {
-            return _context.User.ToList();
+            return _context.User
+                .Select(u => new User
+                {
+                    UserId = u.UserId,
+                    Name = u.Name,
+                    Email = u.Email,
+                    Pets = u.Pets.Select(p => new Pet
+                    {
+                        PetId = p.PetId,
+                        Name = p.Name,
+                        Breed = p.Breed,
+                        Size = p.Size,
+                        Age = DateTime.Now.Year - p.Age
+                    })
+                }).ToList();
         }
-        public Pet GetPetById(int PetId)
+
+        public async Task<User> CreateUser(User user)
         {
-            return _context.Pet.FirstOrDefault(y => y.PetId == PetId);
+            var createdUser = await _context.User.AddAsync(user, new CancellationToken(true));
+            _context.SaveChanges();
+            user.UserId = createdUser.Entity.UserId;
+            return user;
         }
-        public IEnumerable<Pet> GetPets()
+
+        public Pet GetPetById(int petId, int userId)
         {
-            return _context.Pet.ToList();
+            return _context.Pet
+                .Where(p => p.UserId == userId)
+                .Where(p => p.PetId == petId).FirstOrDefault();
+
         }
-        public IEnumerable<Pet> GetPetsByUserId(int PetId)
+        public IEnumerable<Pet> GetPets(int userId)
         {
-            return _context.Pet.Where(y => y.PetId == PetId);
+            return _context.Pet.Where(p => p.UserId == userId).ToList();
         }
-        
+
+        public async Task<Pet> CreatePet(Pet pet)
+        {
+            var createdPet = await _context.Pet.AddAsync(pet);
+            _context.SaveChanges();
+            
+            return new Pet(){ PetId = createdPet.Entity.PetId};
+        }
         public void DeleteUser(User users)
         {
-            var getUser = GetPetsByUserId(users.UserId).Any();
-
-            if(getUser) throw new InvalidOperationException("Este usuário não pode ser deletado");
-
             _context.User.Remove(users);
             _context.SaveChanges();
         }
+
+        public void DeletePet(Pet pet)
+        {
+            _context.Pet.Remove(pet);
+            _context.SaveChanges();
+        }
+
+
         public void AddPetsToUser(Pet pet, User user)
         {
-           var getPet = GetPetById(pet.PetId);
+           var getPet = GetPetById(pet.PetId, user.UserId);
            var getUser = GetUserById(user.UserId);
 
            if (getPet is null || getUser is null) {
             throw new InvalidOperationException("Este pet ou usuário não existe");
            }
 
-            getUser.UserId = getPet.FK_UserId;
+            getUser.UserId = getPet.UserId;
             _context.SaveChanges();
 
         }
 
-        public async Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string latitude, string longitude)
+        public async Task<GeoLocalization> AddGeoLocalPetsAsync(int userId, int petId, string latitude, string longitude)
         {
 
-            var getPet = GetPetById(PetId);
+            var getPet = GetPetById(petId, userId);
 
             if (getPet is null) throw new InvalidOperationException("Este pet não encontrado");
 
@@ -85,7 +120,7 @@ namespace GeoPet.Data
             {
                 Localization = result.displayName,
                 OsmId = result.osmId,
-                FK_PetId = PetId,
+                FK_PetId = petId,
                 Created = DateTime.Now,
             };
 
@@ -102,7 +137,7 @@ namespace GeoPet.Data
                 .OrderByDescending(x => x.Id)
                 .FirstOrDefault();
 
-            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).FK_UserId;
+            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).UserId;
 
             var getUser = GetUserById(userId);
 
@@ -125,7 +160,7 @@ namespace GeoPet.Data
                 .OrderByDescending(x => x.Id)
                 .FirstOrDefault();
 
-            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).FK_UserId;
+            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).UserId;
 
             var getUser = GetUserById(userId);
 
@@ -165,6 +200,15 @@ namespace GeoPet.Data
             img.Save(stream, ImageFormat.Png);
             return stream.ToArray();
 
+        }
+
+        public User FindUser(AuthUser user)
+        {
+            var hasUser = _context.User
+                .Where(u => u.Email == user.Email)
+                .Where(u => u.Password == user.Password);
+
+            return hasUser.FirstOrDefault();
         }
     }
 }

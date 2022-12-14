@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.6, )"
@@ -84,7 +88,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[4.7.0, )"
             },
             "System.IO.FileSystem": {
               "target": "Package",
@@ -93,6 +97,10 @@
             "XunitXml.TestLogger": {
               "target": "Package",
               "version": "[3.0.70, )"
+            },
+            "runtime.osx.10.10-x64.CoreCompat.System.Drawing": {
+              "target": "Package",
+              "version": "[5.8.64, )"
             }
           },
           "imports": [
