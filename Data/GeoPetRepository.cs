@@ -1,6 +1,8 @@
+using System.Linq;
 using GeoPet.Models;
 using GeoPet.Services;
 using Microsoft.EntityFrameworkCore;
+using QRCoder;
 using SkiaSharp;
 
 namespace GeoPet.Data
@@ -85,11 +87,20 @@ namespace GeoPet.Data
             return updatedLocation.Entity;
         }
 
-        //public async SKBitmap GenerateQrCode(int PetId)
-        //{
-        //    var localization = _context.GeoLocalization.FirstOrDefault(x => x.FK_PetId == PetId);
+        public Qrcode GenerateQrCode(int PetId)
+        {
+            var geoPet = _context.GeoLocalization
+                .Where(x => x.FK_PetId == PetId)
+                .OrderByDescending(x => x.Id)
+                .FirstOrDefault();
+                
 
-        //    var result = GenerateByteArray(localization.ToString());
-        //}
+            var result = new Qrcode()
+            {
+                src = $"http://api.qrserver.com/v1/create-qr-code/?data={geoPet.Localization}&size=100x100"
+            };
+
+            return result;
+        }
     }
 }

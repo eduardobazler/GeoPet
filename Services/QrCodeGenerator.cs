@@ -4,14 +4,14 @@
 //using System.Drawing.Imaging;
 //using GeoPet.Models;
 //using System.IO;
-//using SkiaSharp;
+
 
 //namespace GeoPet.Services
 //{
 //    public class QrCodeGenerator
 //    {
 
-//        public SkiaSharpVersion GenerateImage(string localization)
+//        public Bitmap GenerateImage(string localization)
 //        {
 //            var qrGenerator = new QRCodeGenerator();
 //            var qrCodeData = qrGenerator.CreateQrCode(localization, QRCodeGenerator.ECCLevel.Q);

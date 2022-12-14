@@ -68,7 +68,7 @@
             },
             "QRCoder": {
               "target": "Package",
-              "version": "[1.4.3, )"
+              "version": "[1.2.0, )"
             },
             "SkiaSharp": {
               "target": "Package",
@@ -77,6 +77,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "XunitXml.TestLogger": {
               "target": "Package",

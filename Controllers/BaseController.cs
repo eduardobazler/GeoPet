@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
 using GeoPet.Data;
-using static System.Net.WebRequestMethods;
 using QRCoder;
+using System.Drawing.Imaging;
+using System.Drawing;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace GeoPet.Controllers
 {
@@ -123,22 +125,18 @@ namespace GeoPet.Controllers
         /// <summary> This function generate a QRCode to a user</summary>
         /// <param name="petId"> a pet id</param>
         /// <returns> a qrcode</returns>
-        [HttpPost("/GenerateQrCode/{petId}")]
-        public Task<IActionResult> GenerateQrCode(int petId)
+        [HttpGet("/GenerateQrCode/{petId}")]
+        public IActionResult GenerateQrCode(int petId)
         {
 
-            //var qrCode = await _repository.GenerateQrCode(petId);
+            var qrCode = _repository.GenerateQrCode(petId);
 
-            //if (qrCode == null) return NotFound();
+            if (qrCode == null) return NotFound();
 
-            //return Ok(qrCode);
-
-            var qrGenerator = new QRCodeGenerator();
-            var qrCodeData = qrGenerator.CreateQrCode("Hellow World", QRCodeGenerator.ECCLevel.Q);
-            var qrCode = new QRCode(qrCodeData);
-            var qrCodeImage = qrCode.GetGraphic(10);
-            return Ok(qrCodeImage);
+            return Ok(qrCode);
 
         }
     }
 }
+
+// http://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100
