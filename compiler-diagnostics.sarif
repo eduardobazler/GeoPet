@@ -52,244 +52,6 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 23,
-                  "endLine": 9,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 9,
-                  "startColumn": 23,
-                  "endLine": 9,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Email' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Password' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 23,
-                  "endLine": 12,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Pet' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 33,
-                  "endLine": 14,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 33,
-                  "endLine": 14,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Name' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'User' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 21,
-                  "endLine": 16,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 21,
-                  "endLine": 16,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Localization' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "O propriedade não anulável 'Name' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
-          "locations": [
-            {
-              "resultFile": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqUser.cs",
                 "region": {
                   "startLine": 8,
@@ -326,9 +88,9 @@
               "resultFile": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqUser.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 11,
                   "startColumn": 19,
-                  "endLine": 10,
+                  "endLine": 11,
                   "endColumn": 24
                 }
               }
@@ -339,9 +101,9 @@
               "physicalLocation": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqUser.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 11,
                   "startColumn": 19,
-                  "endLine": 10,
+                  "endLine": 11,
                   "endColumn": 24
                 }
               }
@@ -360,9 +122,9 @@
               "resultFile": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqUser.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 15,
                   "startColumn": 19,
-                  "endLine": 14,
+                  "endLine": 15,
                   "endColumn": 27
                 }
               }
@@ -373,10 +135,107 @@
               "physicalLocation": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqUser.cs",
                 "region": {
-                  "startLine": 14,
+                  "startLine": 15,
                   "startColumn": 19,
-                  "endLine": 14,
+                  "endLine": 15,
                   "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possível retorno de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Data/GeoPetRepository.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 20,
+                  "endLine": 18,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Name' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqPet.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 19,
+                  "endLine": 8,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Controllers/TypesReq/ReqPet.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 19,
+                  "endLine": 8,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possível retorno de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Data/GeoPetRepository.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 20,
+                  "endLine": 48,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferência de uma referência possivelmente nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Services/UserService/UserService.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 13,
+                  "endLine": 48,
+                  "endColumn": 19
                 }
               }
             }
@@ -488,81 +347,269 @@
           }
         },
         {
-          "ruleId": "CS8602",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Desreferência de uma referência possivelmente nula.",
+          "message": "O propriedade não anulável 'Name' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Services/GeoPetService.cs",
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
                 "region": {
-                  "startLine": 22,
-                  "startColumn": 31,
-                  "endLine": 22,
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 23,
+                  "endLine": 9,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Email' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Cep' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Password' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Pets' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/User.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Name' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'User' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 21,
+                  "endLine": 18,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "O propriedade não anulável 'Localization' precisa conter um valor não nulo ao sair do construtor. Considere declarar o propriedade como anulável.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/GeoLocalization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
                   "endColumn": 35
                 }
               }
             }
           ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8602",
-          "level": "warning",
-          "message": "Desreferência de uma referência possivelmente nula.",
-          "locations": [
+          "relatedLocations": [
             {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Services/UserService/UserService.cs",
+              "physicalLocation": {
+                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Models/GeoLocalization.cs",
                 "region": {
-                  "startLine": 48,
-                  "startColumn": 13,
-                  "endLine": 48,
-                  "endColumn": 19
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possível retorno de referência nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 20,
-                  "endLine": 18,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possível retorno de referência nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 35,
-                  "startColumn": 20,
-                  "endLine": 35,
-                  "endColumn": 70
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 35
                 }
               }
             }
@@ -601,9 +648,9 @@
               "resultFile": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Program.cs",
                 "region": {
-                  "startLine": 35,
+                  "startLine": 40,
                   "startColumn": 22,
-                  "endLine": 35,
+                  "endLine": 40,
                   "endColumn": 29
                 }
               }
@@ -614,9 +661,9 @@
               "physicalLocation": {
                 "uri": "file:///home/eduardo/projetoTrybe/GeoPet/Program.cs",
                 "region": {
-                  "startLine": 5,
+                  "startLine": 7,
                   "startColumn": 1,
-                  "endLine": 5,
+                  "endLine": 7,
                   "endColumn": 4
                 }
               }

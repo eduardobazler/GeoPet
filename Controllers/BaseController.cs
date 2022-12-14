@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
 using GeoPet.Data;
 using GeoPet.Models;
+using GeoPet.Services.PetService;
 using GeoPet.Services.UserService;
 
 namespace GeoPet.Controllers
@@ -14,12 +15,14 @@ namespace GeoPet.Controllers
         public readonly IGeoPetRepository _repository;
 
         private readonly IUserService _userService;
+        private readonly IPetService _petService;
         //public readonly IGeoPetService _service;
 
-        public BaseController(IGeoPetRepository repository, IUserService userService)
+        public BaseController(IGeoPetRepository repository, IUserService userService, IPetService petService)
         {
             _repository = repository;
             _userService = userService;
+            _petService = petService;
         }
 
         /// <summary> This function return a user</summary>
@@ -44,8 +47,8 @@ namespace GeoPet.Controllers
         {
             try
             {
-                var response = await _userService.CreateUser(request);
-                return Ok(response);
+                await _userService.CreateUser(request);
+                return Ok("Created User");
             }
             catch (Exception e)
             {
@@ -100,7 +103,22 @@ namespace GeoPet.Controllers
         {
             return Ok(_repository.GetPets());
         }
-
+        
+        [HttpPost("pet")]
+        public async Task<ActionResult> CreatePet(ReqPet request)
+        {
+            try
+            {
+                await _petService.CreatePet(request);
+                return Ok("Created Pet");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return BadRequest(e.Message);
+            }
+            
+        }
         
 
         /// <summary> This function add a pet to a user</summary>

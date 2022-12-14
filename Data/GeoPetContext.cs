@@ -32,8 +32,13 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         modelBuilder.Entity<Pet>()
             .HasOne(b => b.User)
-            .WithMany(p => p.Pet)
-            .HasForeignKey(b => b.FK_UserId);
+            .WithMany(p => p.Pets)
+            .HasForeignKey(b => b.UserId);
+
+        modelBuilder.Entity<User>()
+            .HasMany(c => c.Pets)
+            .WithOne(e => e.User)
+            .HasForeignKey(p => p.UserId);
     }
 }
 

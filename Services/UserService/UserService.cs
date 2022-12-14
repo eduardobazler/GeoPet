@@ -27,7 +27,7 @@ public class UserService : IUserService
         var user = new User()
         {
             Name = request.Name, 
-            Cep = request.Cep, 
+            Cep = request.Cep.ToString(), 
             Email = request.Email, 
             Password = request.Password,
             Created = DateTime.Now

@@ -8,11 +8,13 @@ namespace GeoPet.Data
         User GetUserById(int userId);
         IEnumerable<User> GetUsers();
         Task<User> CreateUser(User user);
-        Pet GetPetById(int PetId);
+        Pet GetPetById(int petId);
         IEnumerable<Pet> GetPets();
         IEnumerable<Pet> GetPetsByUserId(int userId);
+        Task<Pet> CreatePet(Pet pet);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
         void AddGeoLocalPets(int PetId, string lat, string lon);
+        Task<AuthUser> FindUser(AuthUser user);
     }
 }
