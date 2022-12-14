@@ -5,5 +5,6 @@ namespace GeoPet.Services.PetService;
 
 public interface IPetService
 {
-    Task<Pet> CreatePet(ReqPet request);
+    Task<Pet> CreatePet(Pet pet);
+    void DeletePet(int petId, int userId);
 }

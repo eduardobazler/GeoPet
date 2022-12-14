@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using GeoPet.Controllers.TypesReq;
 using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
@@ -5,10 +6,13 @@ using GeoPet.Data;
 using GeoPet.Models;
 using GeoPet.Services.PetService;
 using GeoPet.Services.UserService;
+using GeoPet.Utils;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GeoPet.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api")]
     public class BaseController : ControllerBase
     {
@@ -16,6 +20,7 @@ namespace GeoPet.Controllers
 
         private readonly IUserService _userService;
         private readonly IPetService _petService;
+        
         //public readonly IGeoPetService _service;
 
         public BaseController(IGeoPetRepository repository, IUserService userService, IPetService petService)
@@ -24,7 +29,7 @@ namespace GeoPet.Controllers
             _userService = userService;
             _petService = petService;
         }
-
+        
         /// <summary> This function return a user</summary>
         /// <param name="id"> a user id</param>
         /// <returns> a user</returns>
@@ -42,6 +47,7 @@ namespace GeoPet.Controllers
             return Ok(_repository.GetUsers());
         }
 
+        [AllowAnonymous]
         [HttpPost("user")]
         public async Task<ActionResult> CreateUser(ReqUser request)
         {
@@ -57,24 +63,19 @@ namespace GeoPet.Controllers
             }
             
         }
-
-        /// <summary> This function return a list of pets of user</summary>
-        /// <param name="userId"> a user id</param>
-        /// <returns> a pet list</returns>
-        [HttpGet("user/{id}/pet")]
-        public IActionResult GetPetsByUser(int userId)
-        {
-            return Ok(_repository.GetPetsByUserId(userId));
-        }
-
+        
         /// <summary> This function deletes a user</summary>
         /// <param name="id"> a user id</param>
         /// <returns> a user</returns>
-        [HttpDelete("user/{id}")]
-        public IActionResult DeleteChannel(int id)
+        [HttpDelete("user")]
+        public IActionResult DeleteChannel()
         {
-            var user = _repository.GetUserById(id);
-            if (user == null)
+            var userId = GetUserIdToken();
+
+            if (userId is null) return Unauthorized();
+
+            var user = _repository.GetUserById(Int32.Parse(userId));
+            if (user is null)
             {
                 return NotFound();
             }
@@ -86,9 +87,14 @@ namespace GeoPet.Controllers
         /// <param name="id"> a pet id</param>
         /// <returns> a pet list</returns>
         [HttpGet("pet/{id}")]
-        public IActionResult GetPetById(int id)
+
+         public IActionResult GetPetById(int id)
         {
-            var pet = _repository.GetPetById(id);
+            var userId = GetUserIdToken();
+
+            if (userId is null) return Unauthorized();
+            
+            var pet = _repository.GetPetById(id, Int32.Parse(userId));
             if (pet == null)
             {
                 return NotFound();
@@ -101,15 +107,32 @@ namespace GeoPet.Controllers
         [HttpGet("pet")]
         public IActionResult GetPets()
         {
-            return Ok(_repository.GetPets());
+            var userId = GetUserIdToken();
+
+            if (userId is null) return Unauthorized();
+            
+            return Ok(_repository.GetPets(Int32.Parse(userId)));
         }
         
         [HttpPost("pet")]
         public async Task<ActionResult> CreatePet(ReqPet request)
         {
+            var id = GetUserIdToken();
+
+            if (id is null) return Unauthorized();
+            
+            var pet = new Pet()
+            {
+                Name = request.Name,
+                UserId = Int32.Parse(id),
+                Breed = (BreedEnum)request.Breed,
+                Size = request.Size,
+                Age = request.Age
+            };
+            
             try
             {
-                await _petService.CreatePet(request);
+                await _petService.CreatePet(pet);
                 return Ok("Created Pet");
             }
             catch (Exception e)
@@ -119,45 +142,33 @@ namespace GeoPet.Controllers
             }
             
         }
-        
 
-        /// <summary> This function add a pet to a user</summary>
-        /// <param name="userId"> a user id</param>
-        /// <param name="petId"> a pet id</param>
-        /// <returns> a video</returns>
-        [HttpPost("user/{userId}/pet/{petId}")]
-        public IActionResult AddPetsToUser(int userId, int petId)
+        [HttpDelete("pet")]
+        public ActionResult DeletePet(int petId)
         {
-            var user = _repository.GetUserById(userId);
-            if (user == null)
+            var id = GetUserIdToken();
+            
+            if (id is null) return Unauthorized();
+            
+            try
             {
-                return NotFound();
+                 _petService.DeletePet(petId, Int32.Parse(id));
+                return Ok("Created Pet");
             }
-            var pet = _repository.GetPetById(petId);
-            if (pet == null)
+            catch (Exception e)
             {
-                return NotFound();
+                Console.WriteLine(e);
+                return BadRequest(e.Message);
             }
-            _repository.AddPetsToUser(pet, user);
-            return Ok(pet);
+    
         }
 
-        /// <summary> This function add a pet to a user</summary>
-        /// <param name="userId"> a user id</param>
-        /// <param name="petId"> a pet id</param>
-        /// <returns> a video</returns>
-        //[HttpPost]
-        //[Route("pet/{id}/localization")]
-        //public async Task<IActionResult> FindGeoPet(string latitude, string longitude)
-        //{
-        //    var result = await _service.FindGeoPet(latitude, longitude);
-        //    if (result is false) return NotFound();
-        //    return Ok(result);
-        //}
+        private string GetUserIdToken()
+        {
+            var userClaims = HttpContext.User.Identities.FirstOrDefault();
+            var userId = userClaims.FindFirst(x => x.Type == "Id")?.Value;
 
-        //Task<object> IGeoPetService.FindGeoPet(string latitude, string longitude)
-        //{
-        //    throw new NotImplementedException();
-        //}
+            return userId;
+        }
     }
 }

@@ -7,9 +7,6 @@ public class ReqPet
     [Required]
     public string Name { get; set; }
     [Required]
-    [Range(1, int.MaxValue, ErrorMessage = "Please enter a value bigger than {1}")]
-    public int UserId { get; set; }
-    [Required]
     public int Breed { get; set; }
     [Required]
     [Range(1, 3)]

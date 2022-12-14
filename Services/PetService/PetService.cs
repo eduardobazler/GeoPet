@@ -13,22 +13,26 @@ public class PetService : IPetService
         _repository = repository;
     }
     
-    public async Task<Pet> CreatePet(ReqPet request)
+    public async Task<Pet> CreatePet(Pet pet)
     {
-        var hasUser = _repository.GetUserById(request.UserId);
+        var hasUser = _repository.GetUserById(pet.UserId);
 
         if (hasUser is null) throw new Exception("Usuário não encontrado");
         
-        var pet = new Pet()
-        {
-            Name = request.Name,
-            UserId = request.UserId,
-            Breed = (BreedEnum)request.Breed,
-            Size = request.Size,
-            Age = request.Age
-        };
-
         var createdPet = await _repository.CreatePet(pet);
         return createdPet;
+    }
+
+    public void DeletePet(int petId, int userId)
+    {
+        var hasUser = _repository.GetUserById(userId);
+
+        var hasPet = _repository.GetPetById(petId, userId);
+
+        if (hasUser is null) throw new Exception("Usuário não encontrado");
+        
+        if (hasPet is null) throw new Exception("Pet não encontrado");
+        
+        _repository.DeletePet(hasPet);
     }
 }

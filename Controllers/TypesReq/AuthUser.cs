@@ -4,6 +4,7 @@ namespace GeoPet.Controllers.TypesReq;
 
 public class AuthUser
 {
+    [Required]
     [EmailAddress]
     public string Email { get; set; }
     

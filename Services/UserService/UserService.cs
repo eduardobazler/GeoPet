@@ -36,6 +36,13 @@ public class UserService : IUserService
         return createdUser;
     }
 
+    public User FindUser(AuthUser request)
+    {
+        var user = _repository.FindUser(request);
+        return user;
+    }
+
+
     private async Task<bool> ValidateCEP(int cep)
     {
         var uri = new Uri($"{BaseURL}/{cep}/{FormatRequest}");

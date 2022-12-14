@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Remove="Controllers\UserParam\**" />
     <Compile Remove="Services\Localization.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
   </ItemGroup>
 
   <ItemGroup>

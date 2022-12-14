@@ -27,12 +27,14 @@ builder.Services.AddAuthentication(options =>
 }).AddJwtBearer(jwtOptions =>
 {
     var key = builder.Configuration.GetValue<string>("JwtConfig:Key");
+    Console.WriteLine(key);
     var keyBytes = Encoding.ASCII.GetBytes(key);
     jwtOptions.SaveToken = true;
     jwtOptions.TokenValidationParameters = new TokenValidationParameters
     {
         IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
         ValidateLifetime = true,
+        ValidateAudience = false,
         ValidateIssuer = false,
     };
 });

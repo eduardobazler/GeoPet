@@ -166,3 +166,5 @@
 /home/eduardo/projetoTrybe/GeoPet/obj/Debug/net6.0/GeoPet.pdb
 /home/eduardo/projetoTrybe/GeoPet/obj/Debug/net6.0/GeoPet.genruntimeconfig.cache
 /home/eduardo/projetoTrybe/GeoPet/obj/Debug/net6.0/ref/GeoPet.dll
+/home/eduardo/projetoTrybe/GeoPet/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/eduardo/projetoTrybe/GeoPet/bin/Debug/net6.0/QRCoder.dll

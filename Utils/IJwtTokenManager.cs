@@ -1,6 +1,9 @@
+using GeoPet.Controllers.TypesReq;
+using GeoPet.Models;
+
 namespace GeoPet.Utils;
 
 public interface IJwtTokenManager
 {
-    string Authenticate(string email, string password);
+    string Authenticate(User user);
 }

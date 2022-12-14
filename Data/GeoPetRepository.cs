@@ -27,6 +27,7 @@ namespace GeoPet.Data
                     Email = u.Email,
                     Pets = u.Pets.Select(p => new Pet
                     {
+                        PetId = p.PetId,
                         Name = p.Name,
                         Breed = p.Breed,
                         Size = p.Size,
@@ -43,17 +44,16 @@ namespace GeoPet.Data
             return user;
         }
 
-        public Pet GetPetById(int petId)
+        public Pet GetPetById(int petId, int userId)
         {
-            return _context.Pet.FirstOrDefault(y => y.PetId == petId);
+            return _context.Pet
+                .Where(p => p.UserId == userId)
+                .Where(p => p.PetId == petId).FirstOrDefault();
+
         }
-        public IEnumerable<Pet> GetPets()
+        public IEnumerable<Pet> GetPets(int userId)
         {
-            return _context.Pet.ToList();
-        }
-        public IEnumerable<Pet> GetPetsByUserId(int PetId)
-        {
-            return _context.Pet.Where(y => y.PetId == PetId);
+            return _context.Pet.Where(p => p.UserId == userId).ToList();
         }
 
         public async Task<Pet> CreatePet(Pet pet)
@@ -65,18 +65,20 @@ namespace GeoPet.Data
         }
         public void DeleteUser(User users)
         {
-            // var getUser = GetPetsByUserId(users.UserId).Any();
-            //
-            // if(getUser) throw new InvalidOperationException("Este usuário não pode ser deletado");
-
             _context.User.Remove(users);
             _context.SaveChanges();
         }
-        
-        
+
+        public void DeletePet(Pet pet)
+        {
+            _context.Pet.Remove(pet);
+            _context.SaveChanges();
+        }
+
+
         public void AddPetsToUser(Pet pet, User user)
         {
-           var getPet = GetPetById(pet.PetId);
+           var getPet = GetPetById(pet.PetId, user.UserId);
            var getUser = GetUserById(user.UserId);
 
            if (getPet is null || getUser is null) {
@@ -100,9 +102,13 @@ namespace GeoPet.Data
 
         }
 
-        public Task<AuthUser> FindUser(AuthUser user)
+        public User FindUser(AuthUser user)
         {
-            throw new NotImplementedException();
+            var hasUser = _context.User
+                .Where(u => u.Email == user.Email)
+                .Where(u => u.Password == user.Password);
+
+            return hasUser.FirstOrDefault();
         }
     }
 }
