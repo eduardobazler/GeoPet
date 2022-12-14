@@ -2,10 +2,12 @@
 
 namespace GeoPet.Services
 {
-	public class Qrcode
+	public class QrCodeImage
 	{
-		
-		public string src { get; set; }
+
+		public string Name { get; set; }
+		public string Email { get; set; }
+		public string LastPositionPet { get; set; }
         
     }
 }

@@ -63,6 +63,8 @@
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.csproj.CoreCompileInputs.cache
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.MvcApplicationPartsAssemblyInfo.cs
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.MvcApplicationPartsAssemblyInfo.cache
+/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.RazorAssemblyInfo.cache
+/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/GeoPet.RazorAssemblyInfo.cs
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/staticwebassets/msbuild.GeoPet.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/staticwebassets/msbuild.build.GeoPet.props
 /Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/obj/Release/net6.0/staticwebassets/msbuild.buildMultiTargeting.GeoPet.props

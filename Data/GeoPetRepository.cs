@@ -1,9 +1,17 @@
+using System;
+using System.IO;
 using System.Linq;
-using GeoPet.Models;
-using GeoPet.Services;
+using System.Drawing;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Drawing.Imaging;
+using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using GeoPet.Services;
+using GeoPet.Models;
 using QRCoder;
-using SkiaSharp;
 
 namespace GeoPet.Data
 {
@@ -100,7 +108,7 @@ namespace GeoPet.Data
 
             var text = geoPet != null
                 ? $"Name: {getUser.Name}, E-mail: {getUser.Email}, LastPositionPet: {geoPet.Localization}"
-                : $"Name: {getUser.Name}, E-mail: {getUser.Email}, LastPositionPet: Ainda não possui registros";
+                : $"Name: {getUser.Name}, E-mail: {getUser.Email}, LastPositionPet: Não possui registros";
 
             var newQrCode = new Qrcode()
             {
@@ -108,6 +116,55 @@ namespace GeoPet.Data
             };
 
             return newQrCode;
+        }
+
+        public byte[] GenerateQrCodeImage(int PetId)
+        {
+            var geoPet = _context.GeoLocalization
+                .Where(x => x.FK_PetId == PetId)
+                .OrderByDescending(x => x.Id)
+                .FirstOrDefault();
+
+            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).FK_UserId;
+
+            var getUser = GetUserById(userId);
+
+            var qrcode = new QrCodeImage()
+            {
+                Name = getUser.Name,
+                Email = getUser.Email,
+                LastPositionPet = geoPet.Localization != null ? geoPet.Localization : "Não possui registros"
+            };
+
+            string json = JsonConvert.SerializeObject(qrcode);
+
+            var Image = GenerateByteArray(json);
+
+
+            return Image;
+        }
+
+        private Bitmap GenerateImage(string JsonQrCode)
+        {
+            var qrGenerator = new QRCodeGenerator();
+            var qrCodeData = qrGenerator.CreateQrCode(JsonQrCode, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrCodeImage = qrCode.GetGraphic(20);
+            return qrCodeImage;
+        }
+
+        private byte[] GenerateByteArray(string JsonQrCode)
+        {
+            var image = GenerateImage(JsonQrCode);
+            return ImageToByte(image);
+        }
+
+        private byte[] ImageToByte(Bitmap img)
+        {
+            MemoryStream stream = new MemoryStream();
+            img.Save(stream, ImageFormat.Png);
+            return stream.ToArray();
+
         }
     }
 }

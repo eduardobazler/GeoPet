@@ -136,7 +136,21 @@ namespace GeoPet.Controllers
             return Ok(qrCode);
 
         }
+
+        /// <summary> This function generate a QRCode to a user</summary>
+        /// <param name="petId"> a pet id</param>
+        /// <returns> a qrcode</returns>
+        [Obsolete]
+        [HttpGet("/GenerateQrCodeImage/{petId}")]
+        public IActionResult GenerateQrCodeImage(int petId)
+        {
+
+            var qrCode = _repository.GenerateQrCodeImage(petId);
+
+            if (qrCode == null) return NotFound();
+
+            return Ok(File(qrCode, "image/jpeg"));
+
+        }
     }
 }
-
-// http://api.qrserver.com/v1/create-qr-code/?data=HelloWorld!&size=100x100

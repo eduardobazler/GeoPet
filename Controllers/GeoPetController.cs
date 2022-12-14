@@ -4,6 +4,9 @@ using GeoPet.Data;
 
 namespace GeoPet.Controllers
 {
+
+    #region Support
+
     [ApiController]
     [Route("api/[controller]")]
     public class GeoPetController : ControllerBase
@@ -24,4 +27,6 @@ namespace GeoPet.Controllers
             return Ok(result);
         }
     }
+
+    #endregion
 }
