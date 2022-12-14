@@ -93,14 +93,21 @@ namespace GeoPet.Data
                 .Where(x => x.FK_PetId == PetId)
                 .OrderByDescending(x => x.Id)
                 .FirstOrDefault();
-                
 
-            var result = new Qrcode()
+            var userId = _context.Pet.FirstOrDefault(x => x.PetId == PetId).FK_UserId;
+
+            var getUser = GetUserById(userId);
+
+            var text = geoPet != null
+                ? $"Name: {getUser.Name}, E-mail: {getUser.Email}, LastPositionPet: {geoPet.Localization}"
+                : $"Name: {getUser.Name}, E-mail: {getUser.Email}, LastPositionPet: Ainda não possui registros";
+
+            var newQrCode = new Qrcode()
             {
-                src = $"http://api.qrserver.com/v1/create-qr-code/?data={geoPet.Localization}&size=100x100"
+                src = $"http://api.qrserver.com/v1/create-qr-code/?data={text}&size=250x250"
             };
 
-            return result;
+            return newQrCode;
         }
     }
 }

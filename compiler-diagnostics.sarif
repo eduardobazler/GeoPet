@@ -14,6 +14,74 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
+          "message": "Non-nullable property 'src' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'displayName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
           "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
@@ -184,16 +252,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'src' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 20
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 27
                 }
               }
             }
@@ -201,12 +269,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 20
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 27
                 }
               }
             }
@@ -218,16 +286,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'displayName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 34
+                  "startLine": 17,
+                  "startColumn": 21,
+                  "endLine": 17,
+                  "endColumn": 25
                 }
               }
             }
@@ -235,12 +303,33 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 21,
+                  "endLine": 17,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Cannot convert null literal to non-nullable reference type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 23,
+                  "startColumn": 52,
                   "endLine": 10,
-                  "endColumn": 34
+                  "endColumn": 56
                 }
               }
             }
@@ -352,95 +441,6 @@
           }
         },
         {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 23,
-                  "endLine": 11,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 23,
-                  "endLine": 11,
-                  "endColumn": 27
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 21,
-                  "endLine": 17,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 21,
-                  "endLine": 17,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8625",
-          "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 52,
-                  "endLine": 10,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possible null reference return.",
@@ -491,10 +491,10 @@
               "resultFile": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
                 "region": {
-                  "startLine": 100,
-                  "startColumn": 74,
-                  "endLine": 100,
-                  "endColumn": 80
+                  "startLine": 97,
+                  "startColumn": 26,
+                  "endLine": 97,
+                  "endColumn": 76
                 }
               }
             }
