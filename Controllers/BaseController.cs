@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
 using GeoPet.Data;
 using static System.Net.WebRequestMethods;
+using QRCoder;
 
 namespace GeoPet.Controllers
 {
@@ -116,6 +117,27 @@ namespace GeoPet.Controllers
             if (geoPet == null) return NotFound();
 
             return Ok(geoPet);
+
+        }
+
+        /// <summary> This function generate a QRCode to a user</summary>
+        /// <param name="petId"> a pet id</param>
+        /// <returns> a qrcode</returns>
+        [HttpPost("/GenerateQrCode/{petId}")]
+        public Task<IActionResult> GenerateQrCode(int petId)
+        {
+
+            //var qrCode = await _repository.GenerateQrCode(petId);
+
+            //if (qrCode == null) return NotFound();
+
+            //return Ok(qrCode);
+
+            var qrGenerator = new QRCodeGenerator();
+            var qrCodeData = qrGenerator.CreateQrCode("Hellow World", QRCodeGenerator.ECCLevel.Q);
+            var qrCode = new QRCode(qrCodeData);
+            var qrCodeImage = qrCode.GetGraphic(10);
+            return Ok(qrCodeImage);
 
         }
     }

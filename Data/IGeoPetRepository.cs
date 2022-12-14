@@ -1,5 +1,6 @@
 using GeoPet.Models;
 using GeoPet.Services;
+using SkiaSharp;
 
 namespace GeoPet.Data
 {
@@ -13,5 +14,6 @@ namespace GeoPet.Data
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
         Task<GeoLocalization> AddGeoLocalPetsAsync(int PetId, string lat, string lon);
+       // SKBitmap GenerateQrCode(int PetId);
     }
 }

@@ -1,6 +1,7 @@
 using GeoPet.Models;
 using GeoPet.Services;
 using Microsoft.EntityFrameworkCore;
+using SkiaSharp;
 
 namespace GeoPet.Data
 {
@@ -83,5 +84,12 @@ namespace GeoPet.Data
 
             return updatedLocation.Entity;
         }
+
+        //public async SKBitmap GenerateQrCode(int PetId)
+        //{
+        //    var localization = _context.GeoLocalization.FirstOrDefault(x => x.FK_PetId == PetId);
+
+        //    var result = GenerateByteArray(localization.ToString());
+        //}
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OLhvIK2p14fgxesbgqqnWTnzmjixM14az6nVbCsIGpY+6GftYaGrr4gZ5A0PkFtYSO04yvnHeaxhUq5260QzlQ==",
+  "dgSpecHash": "2QY5/6H/6QVen2uDeSUxgFzKFSW2J0zBP7klFjLZ9TOIMdjH9+JDH9vw+zm3hRsV0oogASSoawmqLrVj6+oJeA==",
   "success": true,
   "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,9 @@
     "/Users/adrianosantos/.nuget/packages/pomelo.entityframeworkcore.mysql/5.0.0-alpha.1/pomelo.entityframeworkcore.mysql.5.0.0-alpha.1.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/qrcoder/1.4.3/qrcoder.1.4.3.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/skiasharp/2.88.3/skiasharp.2.88.3.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/skiasharp.nativeassets.macos/2.88.3/skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/skiasharp.nativeassets.win32/2.88.3/skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

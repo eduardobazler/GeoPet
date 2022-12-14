@@ -46,48 +46,6 @@
           }
         },
         {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 20,
-                  "endLine": 20,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 28,
-                  "startColumn": 20,
-                  "endLine": 28,
-                  "endColumn": 70
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8618",
           "level": "warning",
           "message": "Non-nullable property 'GeoLocalization' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
@@ -368,9 +326,9 @@
               "resultFile": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 11,
                   "startColumn": 23,
-                  "endLine": 10,
+                  "endLine": 11,
                   "endColumn": 27
                 }
               }
@@ -381,9 +339,9 @@
               "physicalLocation": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 10,
+                  "startLine": 11,
                   "startColumn": 23,
-                  "endLine": 10,
+                  "endLine": 11,
                   "endColumn": 27
                 }
               }
@@ -402,9 +360,9 @@
               "resultFile": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 16,
+                  "startLine": 17,
                   "startColumn": 21,
-                  "endLine": 16,
+                  "endLine": 17,
                   "endColumn": 25
                 }
               }
@@ -415,10 +373,31 @@
               "physicalLocation": {
                 "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 16,
+                  "startLine": 17,
                   "startColumn": 21,
-                  "endLine": 16,
+                  "endLine": 17,
                   "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 20,
+                  "endLine": 21,
+                  "endColumn": 73
                 }
               }
             }
@@ -440,6 +419,45 @@
                   "startColumn": 52,
                   "endLine": 10,
                   "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0246",
+          "level": "error",
+          "message": "The type or namespace name 'QRCode' could not be found (are you missing a using directive or an assembly reference?)",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Controllers/BaseController.cs",
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 30,
+                  "endLine": 138,
+                  "endColumn": 36
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 20,
+                  "endLine": 29,
+                  "endColumn": 70
                 }
               }
             }
@@ -484,6 +502,20 @@
               "PortedFromFxCop",
               "Telemetry",
               "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS0246": {
+          "id": "CS0246",
+          "defaultLevel": "error",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0246)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry",
+              "NotConfigurable"
             ]
           }
         },

@@ -1,14 +1,17 @@
-﻿//using System;
+﻿//using QRCoder;
+//using System;
 //using System.Drawing;
+//using System.Drawing.Imaging;
 //using GeoPet.Models;
-//using QRCoder;
+//using System.IO;
+//using SkiaSharp;
 
 //namespace GeoPet.Services
 //{
 //    public class QrCodeGenerator
 //    {
 
-//        public Bitmap GenerateImage(GeoLocalization localization)
+//        public SkiaSharpVersion GenerateImage(string localization)
 //        {
 //            var qrGenerator = new QRCodeGenerator();
 //            var qrCodeData = qrGenerator.CreateQrCode(localization, QRCodeGenerator.ECCLevel.Q);
@@ -17,7 +20,7 @@
 //            return qrCodeImage;
 //        }
 
-//        public byte[] GenerateByteArray(GeoLocalization localization)
+//        public byte[] GenerateByteArray(string localization)
 //        {
 //            var image = GenerateImage(localization);
 //            return ImageToByte(image);
@@ -25,8 +28,8 @@
 
 //        private byte[] ImageToByte(Image img)
 //        {
-//            using var stream = new MemoryStream();
-//            img.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+//            MemoryStream stream = new MemoryStream();
+//            img.Save(stream, ImageFormat.Png);
 //            return stream.ToArray();
 
 //        }
