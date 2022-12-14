@@ -41,7 +41,3 @@ public class GeoPetContext : DbContext, IGeoPetContext
             .HasForeignKey(p => p.UserId);
     }
 }
-
-// @"Server=127.0.0.1;Database=geopetdb;User=root;Password=password12!;TrustServerCertificate=True"
-// "Server=(localdb)\\msqllocaldb;Database=GeoPetDb;Trusted_Connection=True;MultipleActiveResultSets=True"
-// "Server=(localdb)\\msqllocaldb;Database=GeoPetDb;User=root;Password=password12!;Trusted_Connection=True;MultipleActiveResultSets=True

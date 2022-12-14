@@ -7,10 +7,10 @@ namespace GeoPet.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Localization { get; set; }
+        public string Localization { get; set; } = null;
         public int OsmId { get; set; }
         [ForeignKey("FK_PetId")]
-        public int PetId { get; set; }
+        public int FK_PetId { get; set; }
         public DateTime Created { get; set; }
     }
 }

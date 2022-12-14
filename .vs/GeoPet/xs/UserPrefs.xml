@@ -1,17 +1,9 @@
-﻿<Properties StartupConfiguration="{6C0BFC3B-DD4D-41A7-BAD0-1036EE0C9E70}|GeoPet" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="{6C0BFC3B-DD4D-41A7-BAD0-1036EE0C9E70}|GeoPet">
   <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Data/GeoPetContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BaseController.cs">
     <Files>
-      <File FileName="Program.cs" />
-      <File FileName="Data/GeoPetContext.cs" Line="23" Column="27" />
-      <File FileName="Models/User.cs" />
-      <File FileName="Models/Pet.cs" />
-      <File FileName="Models/GeoLocalization.cs" />
+      <File FileName="Controllers/BaseController.cs" Line="159" Column="2" />
+      <File FileName="Controllers/GeoPetController.cs" Line="31" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,20 +11,26 @@
           <Node name="GeoPet" expanded="True">
             <Node name="GeoPet" expanded="True">
               <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Data" expanded="True">
-                <Node name="GeoPetContext.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="BaseController.cs" selected="True" />
               </Node>
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="View" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

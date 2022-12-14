@@ -3,6 +3,10 @@ using GeoPet.Controllers.TypesReq;
 using Microsoft.AspNetCore.Mvc;
 using GeoPet.Services;
 using GeoPet.Data;
+using QRCoder;
+using System.Drawing.Imaging;
+using System.Drawing;
+using static System.Net.Mime.MediaTypeNames;
 using GeoPet.Models;
 using GeoPet.Services.PetService;
 using GeoPet.Services.UserService;
@@ -17,11 +21,8 @@ namespace GeoPet.Controllers
     public class BaseController : ControllerBase
     {
         public readonly IGeoPetRepository _repository;
-
         private readonly IUserService _userService;
         private readonly IPetService _petService;
-        
-        //public readonly IGeoPetService _service;
 
         public BaseController(IGeoPetRepository repository, IUserService userService, IPetService petService)
         {
@@ -126,7 +127,7 @@ namespace GeoPet.Controllers
                 Name = request.Name,
                 UserId = Int32.Parse(id),
                 Breed = (BreedEnum)request.Breed,
-                Size = request.Size,
+                Size = (SizeEnum)request.Size,
                 Age = request.Age
             };
             
@@ -147,12 +148,12 @@ namespace GeoPet.Controllers
         public ActionResult DeletePet(int petId)
         {
             var id = GetUserIdToken();
-            
+
             if (id is null) return Unauthorized();
-            
+
             try
             {
-                 _petService.DeletePet(petId, Int32.Parse(id));
+                _petService.DeletePet(petId, Int32.Parse(id));
                 return Ok("Created Pet");
             }
             catch (Exception e)
@@ -160,7 +161,55 @@ namespace GeoPet.Controllers
                 Console.WriteLine(e);
                 return BadRequest(e.Message);
             }
-    
+
+        }
+
+        /// <summary> This function add a localization to a pet</summary>
+        /// <param name="userId"> a user id</param>
+        /// <param name="petId"> a pet id</param>
+        /// <param name="latitude"> a latitude</param>
+        /// <param name="longitude"> a longitude</param>
+        /// <returns> a localization</returns>
+        [HttpPost("pet/localization/{petId}")]
+        public async Task<IActionResult> AddGeoLocalPetsAsync(int userId, int petId, string latitude, string longitude)
+        {
+
+            var geoPet = await _repository.AddGeoLocalPetsAsync(userId, petId, latitude, longitude);
+
+            if (geoPet == null) return NotFound();
+
+            return Ok(geoPet);
+
+        }
+
+        /// <summary> This function generate a QRCode to a user</summary>
+        /// <param name="petId"> a pet id</param>
+        /// <returns> a qrcode</returns>
+        [HttpGet("/GenerateQrCode/{petId}")]
+        public IActionResult GenerateQrCode(int petId)
+        {
+
+            var qrCode = _repository.GenerateQrCode(petId);
+
+            if (qrCode == null) return NotFound();
+
+            return Ok(qrCode);
+
+        }
+
+        /// <summary> This function generate a QRCode to a user</summary>
+        /// <param name="petId"> a pet id</param>
+        /// <returns> a qrcode</returns>
+        //[Obsolete]
+        [HttpGet("/GenerateQrCodeImage/{petId}")]
+        public IActionResult GenerateQrCodeImage(int petId)
+        {
+
+            var qrCode = _repository.GenerateQrCodeImage(petId);
+
+            if (qrCode == null) return NotFound();
+
+            return Ok(File(qrCode, "image/jpeg"));
         }
 
         private string GetUserIdToken()

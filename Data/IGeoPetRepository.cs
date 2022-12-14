@@ -1,5 +1,8 @@
 using GeoPet.Controllers.TypesReq;
 using GeoPet.Models;
+using System.Drawing;
+using GeoPet.Services;
+using SkiaSharp;
 
 namespace GeoPet.Data
 {
@@ -12,8 +15,11 @@ namespace GeoPet.Data
         IEnumerable<Pet> GetPets(int userId);
         Task<Pet> CreatePet(Pet pet);
         void DeleteUser(User user);
+        void AddPetsToUser(Pet Pets, User user);
+        Task<GeoLocalization> AddGeoLocalPetsAsync(int userId, int PetId, string lat, string lon);
+        Qrcode GenerateQrCode(int PetId);
+        byte[] GenerateQrCodeImage(int PetId);
         void DeletePet(Pet pet);
-        void AddGeoLocalPets(int PetId, string lat, string lon);
         User FindUser(AuthUser user);
     }
 }

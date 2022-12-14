@@ -9,7 +9,7 @@ namespace GeoPet.Models
         public int PetId { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
-        public int Size { get; set; }
+        public SizeEnum Size { get; set; }
         public BreedEnum Breed { get; set; }
         
         [Column("FK_UserId")]
