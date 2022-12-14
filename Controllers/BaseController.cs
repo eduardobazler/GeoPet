@@ -140,7 +140,7 @@ namespace GeoPet.Controllers
         /// <summary> This function generate a QRCode to a user</summary>
         /// <param name="petId"> a pet id</param>
         /// <returns> a qrcode</returns>
-        [Obsolete]
+        //[Obsolete]
         [HttpGet("/GenerateQrCodeImage/{petId}")]
         public IActionResult GenerateQrCodeImage(int petId)
         {

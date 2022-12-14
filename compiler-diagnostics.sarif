@@ -14,16 +14,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'src' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCodeImage.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 23,
-                  "endLine": 11,
-                  "endColumn": 27
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 20
                 }
               }
             }
@@ -31,12 +31,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCodeImage.cs",
                 "region": {
-                  "startLine": 11,
-                  "startColumn": 23,
-                  "endLine": 11,
-                  "endColumn": 27
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 20
                 }
               }
             }
@@ -48,16 +48,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 21,
-                  "endLine": 17,
-                  "endColumn": 25
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 21
                 }
               }
             }
@@ -65,12 +65,159 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
                 "region": {
-                  "startLine": 17,
-                  "startColumn": 21,
-                  "endLine": 17,
-                  "endColumn": 25
+                  "startLine": 8,
+                  "startColumn": 17,
+                  "endLine": 8,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 17,
+                  "endLine": 9,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'LastPositionPet' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 17,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 17,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'displayName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 23,
+                  "endLine": 10,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/View_Home_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 67,
+                  "endLine": 22,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 20,
+                  "endLine": 31,
+                  "endColumn": 73
                 }
               }
             }
@@ -352,140 +499,6 @@
           }
         },
         {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'displayName' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/Localization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 23,
-                  "endLine": 10,
-                  "endColumn": 34
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8625",
-          "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 52,
-                  "endLine": 10,
-                  "endColumn": 56
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'src' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCodeImage.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCodeImage.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/View_Home_Index_cshtml.g.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 67,
-                  "endLine": 22,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possible null reference return.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 31,
-                  "startColumn": 20,
-                  "endLine": 31,
-                  "endColumn": 73
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possible null reference return.",
@@ -513,12 +526,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 21
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 27
                 }
               }
             }
@@ -526,12 +539,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 8,
-                  "startColumn": 17,
-                  "endLine": 8,
-                  "endColumn": 21
+                  "startLine": 11,
+                  "startColumn": 23,
+                  "endLine": 11,
+                  "endColumn": 27
                 }
               }
             }
@@ -543,16 +556,16 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Email' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Non-nullable property 'User' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 17,
-                  "endLine": 9,
-                  "endColumn": 22
+                  "startLine": 17,
+                  "startColumn": 21,
+                  "endLine": 17,
+                  "endColumn": 25
                 }
               }
             }
@@ -560,12 +573,12 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/Pet.cs",
                 "region": {
-                  "startLine": 9,
-                  "startColumn": 17,
-                  "endLine": 9,
-                  "endColumn": 22
+                  "startLine": 17,
+                  "startColumn": 21,
+                  "endLine": 17,
+                  "endColumn": 25
                 }
               }
             }
@@ -575,31 +588,18 @@
           }
         },
         {
-          "ruleId": "CS8618",
+          "ruleId": "CS8625",
           "level": "warning",
-          "message": "Non-nullable property 'LastPositionPet' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Cannot convert null literal to non-nullable reference type.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Models/GeoLocalization.cs",
                 "region": {
                   "startLine": 10,
-                  "startColumn": 17,
+                  "startColumn": 52,
                   "endLine": 10,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Services/QrCode.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 17,
-                  "endLine": 10,
-                  "endColumn": 32
+                  "endColumn": 56
                 }
               }
             }
@@ -693,18 +693,18 @@
           }
         },
         {
-          "ruleId": "CA1041",
-          "level": "note",
-          "message": "Provide a message for the ObsoleteAttribute that marks GenerateQrCodeImage as Obsolete",
+          "ruleId": "CA1416",
+          "level": "warning",
+          "message": "This call site is reachable on all platforms. 'ImageFormat.Png' is only supported on: 'windows'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Controllers/BaseController.cs",
+                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
                 "region": {
-                  "startLine": 143,
-                  "startColumn": 10,
-                  "endLine": 143,
-                  "endColumn": 18
+                  "startLine": 165,
+                  "startColumn": 30,
+                  "endLine": 165,
+                  "endColumn": 45
                 }
               }
             }
@@ -726,27 +726,6 @@
                   "startColumn": 13,
                   "endLine": 165,
                   "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1416",
-          "level": "warning",
-          "message": "This call site is reachable on all platforms. 'ImageFormat.Png' is only supported on: 'windows'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/Data/GeoPetRepository.cs",
-                "region": {
-                  "startLine": 165,
-                  "startColumn": 30,
-                  "endLine": 165,
-                  "endColumn": 45
                 }
               }
             }
@@ -799,22 +778,6 @@
         }
       ],
       "rules": {
-        "CA1041": {
-          "id": "CA1041",
-          "shortDescription": "Provide ObsoleteAttribute message",
-          "fullDescription": "A type or member is marked by using a System.ObsoleteAttribute attribute that does not have its ObsoleteAttribute.Message property specified. When a type or member that is marked by using ObsoleteAttribute is compiled, the Message property of the attribute is displayed. This gives the user information about the obsolete type or member.",
-          "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1041",
-          "properties": {
-            "category": "Design",
-            "isEnabledByDefault": true,
-            "tags": [
-              "PortedFromFxCop",
-              "Telemetry",
-              "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
         "CA1050": {
           "id": "CA1050",
           "shortDescription": "Declare types in namespaces",
