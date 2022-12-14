@@ -11,8 +11,10 @@ namespace GeoPet.Models
         public int Age { get; set; }
         public int Size { get; set; }
         public BreedEnum Breed { get; set; }
-        [ForeignKey("FK_UserId")]
-        public int FK_UserId { get; set; }
+        
+        [Column("FK_UserId")]
+        public int UserId { get; set; }
+        
         public User User { get; set; }
     }
 }

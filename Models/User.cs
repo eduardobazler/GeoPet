@@ -10,8 +10,7 @@ namespace GeoPet.Models
         public string Email { get; set; }
         public string Cep { get; set; }
         public string Password { get; set; }
-        [InverseProperty("User")]
-        public ICollection<Pet> Pet { get; set; }
         public DateTime Created { get; set; }
+        public IEnumerable<Pet> Pets { get; set; }
     }
 }

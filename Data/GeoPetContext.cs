@@ -14,18 +14,7 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-
-            //optionsBuilder
-            //    .EnableSensitiveDataLogging()
-            //    .UseSqlServer(@"
-            //        Server=127.0.0.1;
-            //        Database=GeoPetDb;
-            //        User=root;
-            //        Password=password12!;"
-            //);
-
             optionsBuilder
-                .EnableSensitiveDataLogging()
                 .UseSqlServer(@"
                     Server=tcp:geopetadmin.database.windows.net,1433;
                     Initial Catalog=GeoPet;
@@ -43,8 +32,13 @@ public class GeoPetContext : DbContext, IGeoPetContext
     {
         modelBuilder.Entity<Pet>()
             .HasOne(b => b.User)
-            .WithMany(p => p.Pet)
-            .HasForeignKey(b => b.FK_UserId);
+            .WithMany(p => p.Pets)
+            .HasForeignKey(b => b.UserId);
+
+        modelBuilder.Entity<User>()
+            .HasMany(c => c.Pets)
+            .WithOne(e => e.User)
+            .HasForeignKey(p => p.UserId);
     }
 }
 
