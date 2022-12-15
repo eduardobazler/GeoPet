@@ -34,6 +34,25 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Microsoft.AspNetCore.TestHost/6.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -1063,6 +1082,22 @@
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
+      "System.IO.Pipelines/6.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1378,6 +1413,21 @@
         "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
         "microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.TestHost/6.0.10": {
+      "sha512": "RuJClyh5eomPQ68aYgIT+JJmnsBDFSaA5e8S7RHCryTJbJ1KFO2YCl6WYQbqR+nV03HFskhCeKetgdhf7QxTeA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.testhost/6.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.TestHost.dll",
+        "lib/net6.0/Microsoft.AspNetCore.TestHost.xml",
+        "microsoft.aspnetcore.testhost.6.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.testhost.nuspec"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -2911,6 +2961,31 @@
         "system.io.filesystem.primitives.nuspec"
       ]
     },
+    "System.IO.Pipelines/6.0.3": {
+      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+      "type": "package",
+      "path": "system.io.pipelines/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.6.0.3.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Runtime/4.3.0": {
       "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
@@ -3636,6 +3711,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.10",
+      "Microsoft.AspNetCore.TestHost >= 6.0.10",
       "Microsoft.EntityFrameworkCore >= 6.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.6",
@@ -3690,6 +3766,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.10, )"
+          },
+          "Microsoft.AspNetCore.TestHost": {
             "target": "Package",
             "version": "[6.0.10, )"
           },

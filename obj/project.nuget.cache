@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "VR4nITHLJ35h0DG2J5ASPzi0OjE2gPsSYZpBkDoVlaZlKdTh2Nqa/IiFcKi9P7sHjQn69ahdufy/Lf2EjK16Qw==",
+  "dgSpecHash": "eJU3vJs8wH5nmGJY0aZbDM/uPAsWclIiNJoIqUtUIZ8vm1udxfhDildvTALe3Lf8ThOQkf3sevlztx5jwjauPQ==",
   "success": true,
   "projectFilePath": "/Users/adrianosantos/Trybe/Aceleracao/ProjetoFinal/GeoPet2/GeoPet/GeoPet.csproj",
   "expectedPackageFiles": [
     "/Users/adrianosantos/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.10/microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/microsoft.aspnetcore.testhost/6.0.10/microsoft.aspnetcore.testhost.6.0.10.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.data.sqlclient/2.1.4/microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -64,6 +65,7 @@
     "/Users/adrianosantos/.nuget/packages/system.io/4.3.0/system.io.4.3.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/system.io.filesystem/4.3.0/system.io.filesystem.4.3.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "/Users/adrianosantos/.nuget/packages/system.io.pipelines/6.0.3/system.io.pipelines.6.0.3.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/system.runtime.caching/4.7.0/system.runtime.caching.4.7.0.nupkg.sha512",
     "/Users/adrianosantos/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
