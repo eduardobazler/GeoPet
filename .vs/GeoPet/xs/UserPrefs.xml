@@ -1,5 +1,5 @@
-﻿<Properties StartupConfiguration="{6C0BFC3B-DD4D-41A7-BAD0-1036EE0C9E70}|GeoPet">
-  <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
+﻿<Properties StartupConfiguration="{5B2D0FC8-89C9-478D-A079-D9263A5A98CA}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BaseController.cs">
     <Files>
       <File FileName="Controllers/BaseController.cs" Line="159" Column="2" />
@@ -27,10 +27,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GeoPetTest PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.GeoPet PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
