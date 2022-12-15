@@ -66,9 +66,18 @@ namespace GeoPet.Data
                 .Where(p => p.PetId == petId).FirstOrDefault();
 
         }
-        public IEnumerable<Pet> GetPets(int userId)
+        public IEnumerable<Pet> GetPets()
         {
-            return _context.Pet.Where(p => p.UserId == userId).ToList();
+            return _context.Pet
+                .Select(u => new Pet
+                {
+                    PetId = u.PetId,
+                    Name = u.Name,
+                    Age = DateTime.Now.Year - u.Age,
+                    Size = u.Size,
+                    Breed = u.Breed,
+                }).ToList();
+
         }
 
         public async Task<Pet> CreatePet(Pet pet)

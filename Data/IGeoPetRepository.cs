@@ -12,7 +12,7 @@ namespace GeoPet.Data
         IEnumerable<User> GetUsers();
         Task<User> CreateUser(User user);
         Pet GetPetById(int petId, int userId);
-        IEnumerable<Pet> GetPets(int userId);
+        IEnumerable<Pet> GetPets();
         Task<Pet> CreatePet(Pet pet);
         void DeleteUser(User user);
         void AddPetsToUser(Pet Pets, User user);
